@@ -18,14 +18,14 @@ $(document).ready(function() {
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
-    $(".contact").click(function() {
+    $(".contact").last().click(function() {
       $("#show-contact").show();
       $("#show-contact h2").text(newContact.firstName);
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
     });
 
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
+  //  $("input#new-first-name").val("");
+  //  $("input#new-last-name").val("");
   });
 });
